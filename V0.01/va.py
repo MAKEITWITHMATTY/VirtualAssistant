@@ -1,7 +1,8 @@
 import os, json, shlex, sys, datetime as dt, textwrap
 from pathlib import Path
 
-STATE_PATH = Path.home() / ".va_state.json"
+from pathlib import Path
+STATE_PATH = Path.cwd() / ".va_state.json"
 
 # ---------- Persistence ----------
 def load_state():
